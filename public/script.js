@@ -4,7 +4,7 @@ document.getElementById('covidForm').addEventListener('submit', async function(e
 
     //Getting the form data using FormData API
     const formData = new FormData(this);
-    const state = formData.get('state'); //Getting the value of the 'state' input field
+    let state = formData.get('state'); //Getting the value of the 'state' input field
     //Converting state abbreviation to lowercase so data is retrieved correctly
     state = state.toLowerCase();
 
