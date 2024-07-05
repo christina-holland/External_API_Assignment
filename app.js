@@ -31,7 +31,7 @@ app.post('/covid-data', async (req, res) => {
         //Extract and format relevant data from the API response
         const formattedData = {
             state: response.data.state,
-            deaths: response.data.deathConfirmed,
+            deaths: response.data.death,
         };
 
         //Send the formatted data back to the client
